@@ -21,9 +21,9 @@ class AuthenticationBloc
     AuthenticationEvent event,
   ) async* {
     if (event is AppStarted) {
-      final bool hasToken = await AuthPreferences.hasToken();
+      final bool isToken = await AuthPreferences.isToken();
 
-      if (hasToken) {
+      if (isToken) {
         final record = await _userRepository.getUserInfo();
         yield Authenticated(record);
       } else {

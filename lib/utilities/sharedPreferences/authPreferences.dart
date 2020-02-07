@@ -19,7 +19,7 @@ class AuthPreferences {
     return prefs.getString(PreferencesName.token);
   }
 
-  static Future<bool> hasToken() async {
+  static Future<bool> isToken() async {
     final prefs = await SharedPreferences.getInstance();
 
     return prefs.getString(PreferencesName.token) == null ? false : true;

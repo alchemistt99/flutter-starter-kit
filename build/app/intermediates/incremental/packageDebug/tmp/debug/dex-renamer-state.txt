@@ -1,0 +1,4 @@
+#Fri Feb 07 20:44:06 WIB 2020
+base.0=/home/aldi/playground/mobile/flutter/flutter-starter-kit/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
